@@ -17,9 +17,9 @@ public class SpawnManagerEditor : Editor
 
     private void OnEnable()
     {
-        if (File.Exists(Application.dataPath + @"\Waves.txt"))
+        if (File.Exists(Application.dataPath + @"\Resources\Waves.txt"))
         {
-            string[] waveData = File.ReadAllLines(Application.dataPath + @"\Waves.txt");
+            string[] waveData = File.ReadAllLines(Application.dataPath + @"\Resources\Waves.txt");
             size = waveData.Length;
             spawnOb = new List<SpawnableObject[]>();
             amountOfEnemiesPerWave = new int[size];
@@ -115,7 +115,7 @@ public class SpawnManagerEditor : Editor
             }
         }
 
-        string path = Application.dataPath + @"\Waves.txt";
+        string path = Application.dataPath + @"\Resources\Waves.txt";
         if (!File.Exists(path))
         {
             File.CreateText(path);

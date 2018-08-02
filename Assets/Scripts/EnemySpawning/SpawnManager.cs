@@ -11,10 +11,9 @@ public class SpawnManager : MonoBehaviour {
     private void Awake()
     {
         currentWave = 0;
-        if (File.Exists(Application.dataPath + @"\Waves.txt"))
+        if ((Resources.Load("Waves") as TextAsset) != null)
         {
-            print("asdasdasadsd");
-            string[] waveData = File.ReadAllLines(Application.dataPath + @"\Waves.txt");
+            string[] waveData = (Resources.Load("Waves") as TextAsset).text.Split('\n');
             int size = waveData.Length;
 
             for (int i = 0; i < size; i++)
@@ -59,7 +58,6 @@ public class SpawnManager : MonoBehaviour {
                 print(spawnOb.amount);
                 for (int i = spawnOb.amount; i > 0; i--)
                 {
-                    print("ad");
                     Instantiate(spawnOb.enemy, transform);
                 }
             }
