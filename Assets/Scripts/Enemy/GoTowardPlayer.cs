@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class GoTowardPlayer : MonoBehaviour {
+
+    public float acceleration;
+
     GameObject player;
     Rigidbody boi;
 
@@ -23,7 +26,7 @@ public class GoTowardPlayer : MonoBehaviour {
             Vector3 enemyRot = transform.rotation.eulerAngles;
             enemyRot.y = -angleToPlayer * Mathf.Rad2Deg+90;
             transform.rotation = Quaternion.Euler(enemyRot);
-            boi.AddForce(directionToPlayer);
+            boi.AddForce(directionToPlayer.normalized * acceleration);
         }
 	}
 }
