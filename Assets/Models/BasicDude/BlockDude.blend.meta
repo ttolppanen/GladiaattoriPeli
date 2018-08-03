@@ -1,0 +1,252 @@
+fileFormatVersion: 2
+guid: b5bd0046b2a5cca46be63e743dbce05e
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Armature
+    100002: //RootNode
+    100004: Body
+    100006: Body_0
+    100008: Head
+    100010: head
+    100012: LeftArm1
+    100014: LeftArm2
+    100016: LeftArm3
+    100018: LeftArm4
+    100020: LeftLeg1
+    100022: LeftLeg2
+    100024: LeftLeg3
+    100026: LeftLeg4
+    100028: LeftLeg5
+    100030: LeftLeg6
+    100032: RightArm1
+    100034: RightArm2
+    100036: RightArm3
+    100038: RightArm4
+    100040: RightLeg1
+    100042: RightLeg2
+    100044: RightLeg3
+    100046: RightLeg4
+    100048: RightLeg5
+    100050: RightLeg6
+    400000: Armature
+    400002: //RootNode
+    400004: Body
+    400006: Body_0
+    400008: Head
+    400010: head
+    400012: LeftArm1
+    400014: LeftArm2
+    400016: LeftArm3
+    400018: LeftArm4
+    400020: LeftLeg1
+    400022: LeftLeg2
+    400024: LeftLeg3
+    400026: LeftLeg4
+    400028: LeftLeg5
+    400030: LeftLeg6
+    400032: RightArm1
+    400034: RightArm2
+    400036: RightArm3
+    400038: RightArm4
+    400040: RightLeg1
+    400042: RightLeg2
+    400044: RightLeg3
+    400046: RightLeg4
+    400048: RightLeg5
+    400050: RightLeg6
+    2100000: unnamed
+    4300000: Body
+    4300002: head
+    4300004: LeftArm1
+    4300006: LeftArm2
+    4300008: RightArm1
+    4300010: RightArm2
+    4300012: LeftLeg1
+    4300014: LeftLeg2
+    4300016: LeftLeg3
+    4300018: RightLeg1
+    4300020: RightLeg2
+    4300022: RightLeg3
+    7400000: Default Take
+    7400002: Idle
+    7400004: Run
+    7400006: Run (1)
+    9500000: //RootNode
+    13700000: Body
+    13700002: head
+    13700004: LeftArm1
+    13700006: LeftArm2
+    13700008: LeftLeg1
+    13700010: LeftLeg2
+    13700012: LeftLeg3
+    13700014: RightArm1
+    13700016: RightArm2
+    13700018: RightLeg1
+    13700020: RightLeg2
+    13700022: RightLeg3
+  externalObjects: {}
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Run (1)
+      takeName: Run
+      firstFrame: 0
+      lastFrame: 21
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Idle
+      takeName: Idle
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Run
+      takeName: Run
+      firstFrame: 0
+      lastFrame: 21
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
