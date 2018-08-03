@@ -1,94 +1,26 @@
 fileFormatVersion: 2
-guid: 8400304e38a7eb1469e0186e4dab522a
+guid: 379cb6329a79bcc43b56e077e06bc526
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: Armature
+    100000: Cylinder_002
     100002: //RootNode
-    100004: Body
-    100006: Bone
-    100008: Bone_001
-    100010: Bone_002
-    100012: Bone_003
-    100014: Bone_004
-    100016: Bone_005
-    100018: Bone_006
-    100020: Bone_007
-    100022: Bone_008
-    100024: Bone_009
-    100026: Bone_010
-    100028: Cube_002
-    100030: Cube_003
-    100032: Cube_004
-    100034: RightHand1
-    100036: RightHand2
-    100038: RightLeg1
-    100040: RightLeg1_001
-    100042: RightLeg2
-    100044: RightLeg2_001
-    100046: Rightleg3
-    100048: Rightleg3_001
-    400000: Armature
+    400000: Cylinder_002
     400002: //RootNode
-    400004: Body
-    400006: Bone
-    400008: Bone_001
-    400010: Bone_002
-    400012: Bone_003
-    400014: Bone_004
-    400016: Bone_005
-    400018: Bone_006
-    400020: Bone_007
-    400022: Bone_008
-    400024: Bone_009
-    400026: Bone_010
-    400028: Cube_002
-    400030: Cube_003
-    400032: Cube_004
-    400034: RightHand1
-    400036: RightHand2
-    400038: RightLeg1
-    400040: RightLeg1_001
-    400042: RightLeg2
-    400044: RightLeg2_001
-    400046: Rightleg3
-    400048: Rightleg3_001
-    2100000: unnamed
-    2100002: Material
-    2100004: None__Untitled_003
-    2300000: Cube_004
-    3300000: Cube_004
-    4300000: RightHand1
-    4300002: RightHand2
-    4300004: Cube_002
-    4300006: Cube_003
-    4300008: RightLeg2
-    4300010: Rightleg3
-    4300012: RightLeg1_001
-    4300014: RightLeg2_001
-    4300016: Rightleg3_001
-    4300018: Body
-    4300020: RightLeg1
-    4300022: Cube_004
+    2100000: None__Untitled
+    2100002: None__Untitled_002
+    2300000: Cylinder_002
+    2300002: //RootNode
+    3300000: Cylinder_002
+    3300002: //RootNode
+    4300000: Cylinder
+    4300002: Cylinder_002
     7400000: Default Take
-    7400002: Run
-    7400004: Walk
     9500000: //RootNode
-    13700000: Body
-    13700002: Cube_002
-    13700004: Cube_003
-    13700006: RightHand1
-    13700008: RightHand2
-    13700010: RightLeg1
-    13700012: RightLeg1_001
-    13700014: RightLeg2
-    13700016: RightLeg2_001
-    13700018: Rightleg3
-    13700020: Rightleg3_001
     2186277476908879412: ImportLogs
   externalObjects: {}
   materials:
-    importMaterials: 0
+    importMaterials: 1
     materialName: 0
     materialSearch: 1
     materialLocation: 1

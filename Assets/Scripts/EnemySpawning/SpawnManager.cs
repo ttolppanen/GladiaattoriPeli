@@ -55,7 +55,6 @@ public class SpawnManager : MonoBehaviour {
         {
             foreach (SpawnableObject spawnOb in waves[currentWave])
             {
-                print(spawnOb.amount);
                 for (int i = spawnOb.amount; i > 0; i--)
                 {
                     Instantiate(spawnOb.enemy, transform);
