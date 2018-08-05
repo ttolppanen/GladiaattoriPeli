@@ -2,18 +2,30 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Movement : MonoBehaviour {
+public class PlayerController : MonoBehaviour {
 
 	public float speed;
     public float maxSpeed;
     Rigidbody rb;
+    Animator anim;
 
 	void Start () {
         rb = GetComponent<Rigidbody>();
+        anim = GetComponent<Animator>();
 	}
-	
-	// Update is called once per frame
-	void Update ()
+
+    private void Update()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            if (!anim.GetBool("Strike"))
+            {
+                anim.SetTrigger("Strike");
+            }
+        }
+    }
+
+    void FixedUpdate ()
     {
         if (Input.GetKey("w"))
         {
