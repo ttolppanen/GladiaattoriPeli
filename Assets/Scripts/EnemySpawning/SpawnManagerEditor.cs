@@ -15,8 +15,11 @@ public class SpawnManagerEditor : Editor
     int[] amountOfEnemiesPerWave = new int[0];
     bool[] foldouts = new bool[0];
 
+    SerializedProperty spawnPoints;
+
     private void OnEnable()
     {
+        //Tiedoston luku
         if (File.Exists(Application.dataPath + @"\Resources\Waves.txt"))
         {
             string[] waveData = File.ReadAllLines(Application.dataPath + @"\Resources\Waves.txt");
@@ -59,10 +62,19 @@ public class SpawnManagerEditor : Editor
         {
             size = 0;
         }
+
+        //Spawni paikat
+        spawnPoints = serializedObject.FindProperty("spawnPoints");
     }
 
     public override void OnInspectorGUI()
     {
+        //Spawni paikat
+        serializedObject.Update();
+        EditorGUILayout.PropertyField(spawnPoints, true);
+        serializedObject.ApplyModifiedProperties();
+       
+        //Aallot
         size = Mathf.Max(0, EditorGUILayout.IntField("Amount of waves ", size));
 
         int[] newAmountOfEnemiesPerWave = CheckAmountOfEnemies();
