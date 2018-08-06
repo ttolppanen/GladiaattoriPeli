@@ -163,39 +163,39 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4739865552327168, guid: 9284feb97a3ed2840b7aa82d6b8eed28, type: 2}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -3.0296934
+      value: 0.20095395
       objectReference: {fileID: 0}
     - target: {fileID: 4739865552327168, guid: 9284feb97a3ed2840b7aa82d6b8eed28, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -59.65893
+      value: -63.545437
       objectReference: {fileID: 0}
     - target: {fileID: 4739865552327168, guid: 9284feb97a3ed2840b7aa82d6b8eed28, type: 2}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: -15.755156
+      value: -61.853214
       objectReference: {fileID: 0}
     - target: {fileID: 4152745109300696, guid: 9284feb97a3ed2840b7aa82d6b8eed28, type: 2}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -73.836365
+      value: -51.099106
       objectReference: {fileID: 0}
     - target: {fileID: 4152745109300696, guid: 9284feb97a3ed2840b7aa82d6b8eed28, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 94.234665
+      value: 91.66859
       objectReference: {fileID: 0}
     - target: {fileID: 4152745109300696, guid: 9284feb97a3ed2840b7aa82d6b8eed28, type: 2}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: -100.28019
+      value: -101.04817
       objectReference: {fileID: 0}
     - target: {fileID: 4867549236856150, guid: 9284feb97a3ed2840b7aa82d6b8eed28, type: 2}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -8.4991
+      value: -18.014576
       objectReference: {fileID: 0}
     - target: {fileID: 4867549236856150, guid: 9284feb97a3ed2840b7aa82d6b8eed28, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 36.9243
+      value: 14.412431
       objectReference: {fileID: 0}
     - target: {fileID: 4867549236856150, guid: 9284feb97a3ed2840b7aa82d6b8eed28, type: 2}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 53.2253
+      value: -96.08071
       objectReference: {fileID: 0}
     - target: {fileID: 96454660416891468, guid: 9284feb97a3ed2840b7aa82d6b8eed28,
         type: 2}
@@ -376,7 +376,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9872e7a2191af3741b22822e5257ee9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 10000
+  hitForce: 3000
 --- !u!136 &596497762
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -385,11 +385,11 @@ CapsuleCollider:
   m_GameObject: {fileID: 596497757}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 0.12
-  m_Height: 2
+  m_Height: 2.694383
   m_Direction: 1
-  m_Center: {x: 0, y: 1, z: 0}
+  m_Center: {x: 0.000004031809, y: 0.65281624, z: 0.000000022666368}
 --- !u!1 &755135249
 GameObject:
   m_ObjectHideFlags: 0

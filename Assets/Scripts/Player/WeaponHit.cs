@@ -16,7 +16,11 @@ public class WeaponHit : MonoBehaviour {
     {
         if (other.tag == "Enemy")
         {
-            other.GetComponent<Rigidbody>().AddForce((other.transform.position - player.transform.position).normalized * hitForce, ForceMode.Impulse);
+            Rigidbody rb = other.GetComponent<Rigidbody>();
+            rb.AddForce((other.transform.position - player.transform.position).normalized * hitForce, ForceMode.Impulse);
+            rb.constraints = RigidbodyConstraints.None;
+            other.transform.parent = null;
+            other.GetComponent<GoTowardPlayer>().enabled = false;
         }
     }
 }

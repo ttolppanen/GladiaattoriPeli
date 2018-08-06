@@ -1,1 +1,3 @@
-Enemy 5:Enemy 5,True
+Enemy 1,True
+Enemy 3,True
+Enemy 6,True
