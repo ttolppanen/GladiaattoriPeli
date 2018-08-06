@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: 0e9b91259066a5c4d96a97aef118c7dc
 ModelImporter:
-  serializedVersion: 22
+  serializedVersion: 23
   fileIDToRecycleName:
     100000: arm_l
     100002: arm_r
@@ -27,6 +27,19 @@ ModelImporter:
     100042: spine0
     100044: spine1
     100046: spine2
+    100048: Head
+    100050: LeftArm
+    100052: LeftElbow
+    100054: LeftFoot
+    100056: leftHips
+    100058: LeftKnee
+    100060: MiddleSpine
+    100062: Pelvis
+    100064: RightArm
+    100066: RightElbow
+    100068: RightFoot
+    100070: RightHips
+    100072: RightKnee
     400000: arm_l
     400002: arm_r
     400004: Armature
@@ -51,6 +64,19 @@ ModelImporter:
     400042: spine0
     400044: spine1
     400046: spine2
+    400048: Head
+    400050: LeftArm
+    400052: LeftElbow
+    400054: LeftFoot
+    400056: leftHips
+    400058: LeftKnee
+    400060: MiddleSpine
+    400062: Pelvis
+    400064: RightArm
+    400066: RightElbow
+    400068: RightFoot
+    400070: RightHips
+    400072: RightKnee
     2100000: Material
     4300000: Cube_005
     4300002: Cube_004
@@ -63,6 +89,7 @@ ModelImporter:
     7400004: Run_001
     7400006: ArmatureAction
     7400008: Strike_001
+    7400010: Run_001 (1)
     9500000: //RootNode
     13700000: Cube_000
     13700002: Cube_001
@@ -97,7 +124,91 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Run_001 (1)
+      takeName: Run_001
+      firstFrame: 13
+      lastFrame: 77
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Run
+      takeName: Run
+      firstFrame: 13
+      lastFrame: 77
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Run_001
+      takeName: Run_001
+      firstFrame: 13
+      lastFrame: 77
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []
@@ -121,6 +232,8 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
