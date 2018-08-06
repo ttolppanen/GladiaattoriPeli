@@ -54,7 +54,7 @@ public class SpawnManager : MonoBehaviour {
 
     void Update ()
     {
-        if (transform.childCount <= 0)
+        if (transform.childCount <= 0 && currentWave < waves.Count)
         {
             foreach (SpawnableObject spawnOb in waves[currentWave])
             {
