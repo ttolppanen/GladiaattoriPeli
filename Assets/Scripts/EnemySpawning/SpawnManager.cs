@@ -6,7 +6,10 @@ using UnityEngine;
 public class SpawnManager : MonoBehaviour {
 
     public List<SpawnableObject[]> waves = new List<SpawnableObject[]>();
+    public GameObject[] spawnPoints = new GameObject[0];
+    public int amountOfSpawnPoints;
     int currentWave;
+    int spawnPointIndex;
 
     private void Awake()
     {
@@ -57,7 +60,9 @@ public class SpawnManager : MonoBehaviour {
             {
                 for (int i = spawnOb.amount; i > 0; i--)
                 {
-                    Instantiate(spawnOb.enemy, transform);
+                    GameObject enemyInstance = Instantiate(spawnOb.enemy, transform);
+                    enemyInstance.transform.position = spawnPoints[spawnPointIndex % spawnPoints.Length].transform.position; //Jakojäännöksellä se käy läpi ja looppaa spawni paikkoja järjestyksessä.
+                    spawnPointIndex++;
                 }
             }
             currentWave += 1;
