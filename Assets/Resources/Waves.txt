@@ -1,4 +1,4 @@
-Enemy 1,True
-Enemy 3,True
-Enemy 6,True
-Enemy 15,True
+RagDoll 1,True
+RagDoll 1,True
+RagDoll 30,True
+RagDoll 60,True
