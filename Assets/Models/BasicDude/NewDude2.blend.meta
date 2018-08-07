@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: 94c028c154940c0469e80e158d3fa679
 ModelImporter:
-  serializedVersion: 23
+  serializedVersion: 22
   fileIDToRecycleName:
     100000: Armature
     100002: Cube_003
@@ -19,6 +19,20 @@ ModelImporter:
     100026: RightFoot
     100028: RightHips
     100030: RightKnee
+    100032: Armature_001
+    100034: Bone
+    100036: Bone_001
+    100038: Bone_002
+    100040: Bone_003
+    100042: Bone_004
+    100044: Bone_005
+    100046: Bone_006
+    100048: Bone_007
+    100050: Bone_008
+    100052: Bone_009
+    100054: Bone_010
+    100056: Bone_011
+    100058: Bone_012
     400000: Armature
     400002: Cube_003
     400004: Head
@@ -35,6 +49,20 @@ ModelImporter:
     400026: RightFoot
     400028: RightHips
     400030: RightKnee
+    400032: Armature_001
+    400034: Bone
+    400036: Bone_001
+    400038: Bone_002
+    400040: Bone_003
+    400042: Bone_004
+    400044: Bone_005
+    400046: Bone_006
+    400048: Bone_007
+    400050: Bone_008
+    400052: Bone_009
+    400054: Bone_010
+    400056: Bone_011
+    400058: Bone_012
     2100000: Material
     2300000: Cube_003
     3300000: Cube_003
@@ -42,10 +70,13 @@ ModelImporter:
     7400000: Default Take
     7400002: Run
     7400004: Run_001
+    7400006: T-Pose_001
     9500000: //RootNode
+    13700000: Cube_003
+    2186277476908879412: ImportLogs
   externalObjects: {}
   materials:
-    importMaterials: 1
+    importMaterials: 0
     materialName: 0
     materialSearch: 1
     materialLocation: 1
@@ -94,8 +125,6 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
