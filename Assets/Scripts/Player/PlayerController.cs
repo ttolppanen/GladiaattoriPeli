@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
 
-	public float speed;
+	public float acceleration;
     public float maxSpeed;
     Rigidbody rb;
     Animator anim;
@@ -23,6 +23,14 @@ public class PlayerController : MonoBehaviour {
                 anim.SetTrigger("Strike");
             }
         }
+        if (Input.GetMouseButtonDown(1))
+        {
+            if (!anim.GetBool("Heavy"))
+            {
+                anim.SetTrigger("Heavy");
+            }
+        }
+
         //anim.SetFloat("Running Speed", Mathf.Clamp01((Mathf.Pow(1 + rb.velocity.magnitude / maxSpeed, 2) - 1)));
     }
 
@@ -30,19 +38,19 @@ public class PlayerController : MonoBehaviour {
     {
         if (Input.GetKey("w"))
         {
-            rb.AddForce(Vector3.forward * speed);
+            rb.AddForce(Vector3.forward * acceleration, ForceMode.Acceleration);
         }
         if (Input.GetKey("s"))
         {
-            rb.AddForce(Vector3.back * speed);
+            rb.AddForce(Vector3.back * acceleration, ForceMode.Acceleration);
         }
         if (Input.GetKey("d"))
         {
-            rb.AddForce(Vector3.right * speed);
+            rb.AddForce(Vector3.right * acceleration, ForceMode.Acceleration);
         }
         if (Input.GetKey("a"))
         {
-            rb.AddForce(Vector3.left * speed);
+            rb.AddForce(Vector3.left * acceleration, ForceMode.Acceleration);
         }
         if (rb.velocity.magnitude > maxSpeed)
         {

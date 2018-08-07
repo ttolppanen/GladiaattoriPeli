@@ -7,11 +7,14 @@ public class WeaponHit : MonoBehaviour {
     public float hitForce;
     public float hitForceUp;
     public float limbForceMultiplier;
+    public float attackStopTime;
     GameObject player;
+    Animator anim;
 
     private void Start()
     {
         player = GameObject.FindWithTag("Player");
+        anim = player.GetComponent<Animator>();
     }
 
     private void OnTriggerEnter(Collider other)//Testi vaiheessa
@@ -28,6 +31,14 @@ public class WeaponHit : MonoBehaviour {
             Transform pelvis = other.transform.GetChild(0).GetChild(0);
             
             pelvis.GetComponent<Rigidbody>().AddForce(forceDirection, ForceMode.Impulse);
+            StartCoroutine(FreezeAttackFrames());
         }
+    }
+
+    IEnumerator FreezeAttackFrames()
+    {
+        anim.SetFloat("Strike Speed", 0);
+        yield return new WaitForSeconds(attackStopTime);
+        anim.SetFloat("Strike Speed", 1);
     }
 }

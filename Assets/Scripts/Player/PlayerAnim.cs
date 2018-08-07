@@ -10,6 +10,10 @@ public class PlayerAnim : MonoBehaviour {
     {
         GameObject trail = weaponPlace.GetChild(0).Find("Trail").gameObject;
         trail.SetActive(!trail.activeSelf);
+        if (!trail.activeSelf)
+        {
+            trail.GetComponent<TrailRenderer>().Clear();
+        }
     }
     public void ToggleWeaponHitbox()
     {

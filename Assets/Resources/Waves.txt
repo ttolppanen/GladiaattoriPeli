@@ -1,4 +1,8 @@
 RagDoll 1,True
-RagDoll 1,True
-RagDoll 30,True
-RagDoll 60,True
+RagDoll 2,True
+RagDoll 3,True
+RagDoll 4,True
+RagDoll 6,True
+RagDoll 8,True
+RagDoll 12,True
+RagDoll 20,True
