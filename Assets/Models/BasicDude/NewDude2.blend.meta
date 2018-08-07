@@ -33,6 +33,17 @@ ModelImporter:
     100054: Bone_010
     100056: Bone_011
     100058: Bone_012
+    100060: Left_Arm
+    100062: Left_Elbow
+    100064: Left_Foot
+    100066: Left_Hip
+    100068: Left_Knee
+    100070: Right_Arm
+    100072: Right_Elbow
+    100074: Right_Foot
+    100076: Right_Hip
+    100078: Right_Knee
+    100080: Spine
     400000: Armature
     400002: Cube_003
     400004: Head
@@ -63,6 +74,17 @@ ModelImporter:
     400054: Bone_010
     400056: Bone_011
     400058: Bone_012
+    400060: Left_Arm
+    400062: Left_Elbow
+    400064: Left_Foot
+    400066: Left_Hip
+    400068: Left_Knee
+    400070: Right_Arm
+    400072: Right_Elbow
+    400074: Right_Foot
+    400076: Right_Hip
+    400078: Right_Knee
+    400080: Spine
     2100000: Material
     2300000: Cube_003
     3300000: Cube_003
