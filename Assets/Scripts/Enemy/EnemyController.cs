@@ -32,9 +32,11 @@ public class EnemyController : MonoBehaviour {
 
     public void Kill(BodyParts bodyPart, Vector3 bodyPartThrustForce)
     {
+        Vector3 bodySpeed = boi.velocity;
         Destroy(GetComponent<Collider>());
         Destroy(boi);
         Destroy(GetComponent<Animator>());
+
         //Ragdoll päälle...
         foreach (Collider coll in GetComponentsInChildren<Collider>())
         {
@@ -43,7 +45,9 @@ public class EnemyController : MonoBehaviour {
         foreach (Rigidbody rb in GetComponentsInChildren<Rigidbody>())
         {
             rb.isKinematic = false;
+            rb.velocity = bodySpeed;
         }
+
         //Irrota ruumiinosa
         if (bodyPart == BodyParts.Head)
         {

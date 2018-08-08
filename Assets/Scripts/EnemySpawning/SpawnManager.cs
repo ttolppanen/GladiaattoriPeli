@@ -66,6 +66,7 @@ public class SpawnManager : MonoBehaviour {
                 }
             }
             currentWave += 1;
+            spawnPointIndex = 0;
         }
 	}
 }

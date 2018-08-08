@@ -10,11 +10,13 @@ public class WeaponHit : MonoBehaviour {
     public float attackStopTime;
     GameObject player;
     Animator anim;
+    Collider coll;
 
     private void Start()
     {
         player = GameObject.FindWithTag("Player");
         anim = player.GetComponent<Animator>();
+        coll = GetComponent<Collider>();
     }
 
     private void OnTriggerEnter(Collider other)//Testi vaiheessa
@@ -38,7 +40,9 @@ public class WeaponHit : MonoBehaviour {
     IEnumerator FreezeAttackFrames()
     {
         anim.SetFloat("Strike Speed", 0);
+        coll.enabled = false;
         yield return new WaitForSeconds(attackStopTime);
         anim.SetFloat("Strike Speed", 1);
+        coll.enabled = true;
     }
 }

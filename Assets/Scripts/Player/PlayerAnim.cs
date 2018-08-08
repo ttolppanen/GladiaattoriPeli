@@ -15,9 +15,9 @@ public class PlayerAnim : MonoBehaviour {
             trail.GetComponent<TrailRenderer>().Clear();
         }
     }
-    public void ToggleWeaponHitbox()
+    public void ToggleWeaponHitbox(int state) //0 on false, 1 true
     {
         Collider hitbox = weaponPlace.GetChild(0).GetComponent<Collider>();
-        hitbox.enabled = !hitbox.enabled;
+        hitbox.enabled = System.Convert.ToBoolean(state);
     }
 }
