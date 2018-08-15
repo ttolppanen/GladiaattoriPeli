@@ -31,7 +31,7 @@ public class PlayerController : MonoBehaviour {
             }
         }
 
-        //anim.SetFloat("Running Speed", Mathf.Clamp01((Mathf.Pow(1 + rb.velocity.magnitude / maxSpeed, 2) - 1)));
+        anim.SetFloat("Running Speed", Mathf.Clamp01(rb.velocity.magnitude / maxSpeed));
     }
 
     void FixedUpdate ()

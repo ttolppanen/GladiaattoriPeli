@@ -5,6 +5,18 @@ using UnityEngine;
 public class PlayerAnim : MonoBehaviour {
 
     public Transform weaponPlace;
+    public float hitLayerWeight = 0;
+    Animator anim;
+
+    private void Start()
+    {
+        anim = GetComponent<Animator>();
+    }
+
+    private void Update()
+    {
+        anim.SetLayerWeight(1, hitLayerWeight);
+    }
 
     public void ToggleWeaponTrail()
     {

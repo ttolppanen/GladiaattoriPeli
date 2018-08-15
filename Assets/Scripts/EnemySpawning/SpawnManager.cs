@@ -54,7 +54,7 @@ public class SpawnManager : MonoBehaviour {
 
     void Update ()
     {
-        if (transform.childCount <= 0 && currentWave < waves.Count)
+        if (transform.childCount <= 4 && currentWave < waves.Count) //4 tulee spawnipisteistä
         {
             foreach (SpawnableObject spawnOb in waves[currentWave])
             {

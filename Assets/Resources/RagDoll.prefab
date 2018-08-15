@@ -744,7 +744,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3272bc05f2503564f8e1dd0f182c7e3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  acceleration: 500
+  acceleration: 25
+  maxSpeed: 14
 --- !u!135 &135350481022749972
 SphereCollider:
   m_ObjectHideFlags: 1
@@ -815,7 +816,7 @@ CapsuleCollider:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1182239557564970}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: ce357bc248c1c9442956e3377c559a5c, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.2533943

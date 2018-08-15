@@ -5,6 +5,7 @@ using UnityEngine;
 public class EnemyController : MonoBehaviour {
 
     public float acceleration;
+    public float maxSpeed;
 
     GameObject player;
     Rigidbody boi;
@@ -26,9 +27,13 @@ public class EnemyController : MonoBehaviour {
             Vector3 enemyRot = transform.rotation.eulerAngles;
             enemyRot.y = -angleToPlayer * Mathf.Rad2Deg + 90;
             transform.rotation = Quaternion.Euler(enemyRot);
-            boi.AddForce(directionToPlayer.normalized * acceleration);
+            boi.AddForce(directionToPlayer.normalized * acceleration, ForceMode.Acceleration);
         }
-	}
+        if (boi.velocity.magnitude > maxSpeed)
+        {
+            boi.velocity = boi.velocity.normalized * maxSpeed;
+        }
+    }
 
     public void Kill(BodyParts bodyPart, Vector3 bodyPartThrustForce)
     {
