@@ -6,6 +6,8 @@ public class EnemyController : MonoBehaviour {
 
     public float acceleration;
     public float maxSpeed;
+    public float walkingDistance;
+    private float currentSpeed;
 
     GameObject player;
     Rigidbody boi;
@@ -15,10 +17,11 @@ public class EnemyController : MonoBehaviour {
     {
         player = GameObject.FindGameObjectWithTag("Player");
         boi = GetComponent<Rigidbody>();
+        currentSpeed = maxSpeed;
 	}
 	
 	// Update is called once per frame
-	void Update ()
+	void FixedUpdate ()
     {
         Vector3 directionToPlayer = player.transform.position - transform.position;
         if(player != null)
@@ -28,10 +31,19 @@ public class EnemyController : MonoBehaviour {
             enemyRot.y = -angleToPlayer * Mathf.Rad2Deg + 90;
             transform.rotation = Quaternion.Euler(enemyRot);
             boi.AddForce(directionToPlayer.normalized * acceleration, ForceMode.Acceleration);
+            float distanceToPlayer = directionToPlayer.magnitude;
+            if (distanceToPlayer < walkingDistance)
+            {
+                currentSpeed = maxSpeed / 2;
+            }
+            else
+            {
+                currentSpeed = maxSpeed;
+            }
         }
-        if (boi.velocity.magnitude > maxSpeed)
+        if (boi.velocity.magnitude > currentSpeed)
         {
-            boi.velocity = boi.velocity.normalized * maxSpeed;
+            boi.velocity = boi.velocity.normalized * currentSpeed;
         }
     }
 
