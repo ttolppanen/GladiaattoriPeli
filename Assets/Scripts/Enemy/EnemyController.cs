@@ -12,8 +12,8 @@ public class EnemyController : MonoBehaviour {
     GameObject player;
     Rigidbody boi;
 
-	// Use this for initialization
-	void Start ()
+    // Use this for initialization
+    void Start ()
     {
         player = GameObject.FindGameObjectWithTag("Player");
         boi = GetComponent<Rigidbody>();
